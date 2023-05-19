@@ -1,0 +1,150 @@
+/** main page **/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+    background: #264b57e7;
+    min-height:  100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+/** header images and list area **/
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+
+}
+nav .menu-img{
+    width: 76px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 13px;
+    left: 15px;
+}
+nav .logo{
+    width: 500px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+/** button custom area **/
+button{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: margin-left 0.5s, background 0.5s;
+}
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+}
+.font-customing{
+    font-size: 26px;
+    font-family: 'Times New Roman';
+}
+/**lamp and light image**/
+.lamp-conainer{
+    position: absolute;
+    top: 0;
+    left: 22%;
+    width: 200%;
+}
+.lamp{
+    width: 260px;
+    margin: 5% ;
+    margin-left: 2px;
+}
+.light{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+/**text page area custom**/
+.text-cotntainer{
+    max-width: 800px;
+    margin-top: 10%;
+    margin-left: 50%;
+}
+.text-cotntainer h1{
+    font-size: 100px;
+    font-weight: 900px;
+    color: black;
+}
+.text-cotntainer p{
+    font-size: 28px;
+    font-family: 'Gill Sans';
+}
+.text-cotntainer a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: black;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+/**lamp line custom**/
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+.control .line{
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+.control .line span{
+    width: 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: #00986f;
+    display: block;
+}
+
+/** second button custom**/
+.active{
+    background: green;
+}
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+.on{
+    opacity: 1;
+}

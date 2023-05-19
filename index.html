@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue-lamp_web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hero">
+
+    <!--header images and list area-->
+    <nav>
+        <img src="imgs/icon.jpg" class="menu-img">
+        <img src="imgs/logo.png" class="logo">
+        <ul class="font-customing">
+            <li><a href="">latest</a></li>
+            <li><a href="">Modern</a></li>
+            <li><a href="">contamporary</a></li>
+            <li><a href="">affordable</a></li>
+        </ul>
+
+        <!--button custom area-->
+         <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+    </nav>
+
+    <!--lamp and light image-->
+    <div class="lamp-conainer">
+        <img src="imgs/lamp.png" class="lamp">
+        <img src="imgs/light.png" class="light" id="light">
+    </div>
+
+    <!--text page area-->
+    <div class="text-cotntainer">
+        <h1>latest<br> in lighting</h1>
+        <p>This is the first lamp from our compagny. We're making a huge collection of Modern lamps in all categories from home to ofice use.</p>
+        <a href="">Check All Collections</a>
+
+        <!--lamp line-->
+        <div class="control">
+            <p>04</p>
+            <div class="line"><span></span></div>
+            <p>05</p>
+        </div>
+    </div>
+  </div>  
+
+  <script>
+      var btn = document.getElementById("btn");
+      var light = document.getElementById("light");
+    
+    
+      function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    }
+    </script>
+</body>
+</html>
